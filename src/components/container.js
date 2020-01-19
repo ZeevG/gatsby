@@ -1,5 +1,8 @@
 import React from 'react'
+import styles from './container.module.css'
 
-export default ({ children }) => (
-  <div style={{ maxWidth: 1180, margin: '0 auto' }}>{children}</div>
+export default (props) => (
+	<div className={styles.container}>
+		{props.children}
+	</div>
 )
