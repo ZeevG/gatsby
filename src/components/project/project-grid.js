@@ -14,7 +14,7 @@ export default (props) => {
     <Container>
       <Row>
         <Col xs="12">
-          <h2 className={styles.projectGridContainerH2}>Projects</h2>
+          <h2 id={props.id} className={styles.projectGridContainerH2}>Projects</h2>
         </Col>
       </Row>
       <Row>

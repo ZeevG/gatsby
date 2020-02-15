@@ -23,13 +23,15 @@ const options = {
   },
 }
 
-import 'bootstrap/dist/css/bootstrap.min.css';
-
 class Project extends React.Component {
   render() {
     const project = get(this, 'props.data.contentfulProject')
 
-    project.carouselImages = [project.coverImage].concat(project.images);
+    if (project.images) {
+      project.carouselImages = [project.coverImage].concat(project.images);
+    } else {
+      project.carouselImages = [project.coverImage];
+    }
 
     console.log(project)
 
@@ -45,7 +47,7 @@ class Project extends React.Component {
                 </div>
                 <div>
                   <h2>{project.name}</h2>
-                  documentToReactComponents(project.longDescription.longDescription, options)
+                  {documentToReactComponents(project.longDescription.json, options)}
                 </div>
               </Col>
             </Row>
@@ -81,7 +83,7 @@ export const pageQuery = graphql`
         }
       }
       longDescription {
-        longDescription
+        json
       }
     }
   }

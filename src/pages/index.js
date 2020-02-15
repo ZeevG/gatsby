@@ -28,7 +28,7 @@ class RootIndex extends React.Component {
             <Cover imageUrl="" ></Cover>
           </div>
       <Container>
-        <ProjectGrid projects={projects}/>
+        <ProjectGrid id="projects" projects={projects}/>
       </Container>
       </Layout>
     )

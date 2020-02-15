@@ -30,7 +30,7 @@ export default (props) => {
               <NavLink href="#">Home</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#">Projects</NavLink>
+              <NavLink href="/#projects">Projects</NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="#">Contact</NavLink>
