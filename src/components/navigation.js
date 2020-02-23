@@ -27,13 +27,13 @@ export default (props) => {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <NavLink href="#">Home</NavLink>
+              <NavLink href="/">Home</NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="/#projects">Projects</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#">Contact</NavLink>
+              <NavLink href="/#contact">Contact</NavLink>
             </NavItem>
           </Nav>
         </Collapse>

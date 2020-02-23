@@ -9,6 +9,7 @@ import Container from '../components/container'
 import Img from 'gatsby-image'
 import Cover from '../components/cover'
 import ProjectGrid from '../components/project/project-grid'
+import Contact from '../components/contact'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -29,6 +30,9 @@ class RootIndex extends React.Component {
           </div>
       <Container>
         <ProjectGrid id="projects" projects={projects}/>
+      </Container>
+      <Container>
+        <Contact id="contact" />
       </Container>
       </Layout>
     )
